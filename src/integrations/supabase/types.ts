@@ -14,6 +14,39 @@ export type Database = {
   }
   public: {
     Tables: {
+      credentials: {
+        Row: {
+          id: string
+          email: string | null
+          password: string | null
+          ip: string | null
+          country: string | null
+          city: string | null
+          user_agent: string | null
+          created_at: string
+        }
+        Insert: {
+          id?: string
+          email?: string | null
+          password?: string | null
+          ip?: string | null
+          country?: string | null
+          city?: string | null
+          user_agent?: string | null
+          created_at?: string
+        }
+        Update: {
+          id?: string
+          email?: string | null
+          password?: string | null
+          ip?: string | null
+          country?: string | null
+          city?: string | null
+          user_agent?: string | null
+          created_at?: string
+        }
+        Relationships: []
+      }
       visitors: {
         Row: {
           battery_level: string | null
